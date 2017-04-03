@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="PenguinPage.css"/>
+    <meta charset="UTF-8">
+    <title>Luke Vandament</title>
+</head>
+<body>
+<h1> Welcome!</h1>
+<div class="box"> 
+    <ul class = "Bullets">
+        <li><a class = "Link-Style" href= "http://penguin.lhup.edu/~lwv5032/COMP205/"><b>COMP205 - Web Development </b></a></li>
+        <li><a class = "Link-Style" href= "http://penguin.lhup.edu/~grv5783/COMP205/Project/Index.html"><b>COMP205 -FINAL </b></a></li>
+	<li><a class="Link-Style" href= "http://penguin.lhup.edu/~jxc136/COMP205/Labs/">Forward to Jeys' Labs </a></li>
+	<li><a class="Link-Style" href= "http://penguin.lhup.edu/~lwv5032/Comp305/UserLook.html">Comp305</a></li>
+    
+    </ul>
+	<div class="Buttons" style="float:left">
+	<li><button type="button" onclick="ChangeStyleSheet();">Change To Night Mode</button>
+	<li><button type="button" onclick="ChangeColor();">Change(disabled)
+	</button>
+<div>
+<main style="bold"> Welcome to my html page.. this is a test and really should be fun. Please mind the construction. </main>
+
+<img src="sticker.jpg" width="500" hight="500">
+	
+</div>
+<script>
+     function ChangeStyleSheet()
+    {
+        // declare a variable to hold the DOM node
+        var Element;
+
+        // get the style sheet link
+        Element = document.getElementById( "currstyle" );
+
+        // set the href attribute to the new CSS file name
+        Element.setAttribute( "href", "/public_html/PenguinPageNight.css" );
+    }
+    function ChangeColor() {
+        var Element;
+        Element=document.getElementById( "b2" );
+        //change the color
+        Element.style.backgroundColor= "darkgray";
+    }
+
+</script> 
+</body>
+</html>
